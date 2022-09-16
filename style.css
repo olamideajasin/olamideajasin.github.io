@@ -1,0 +1,126 @@
+body {
+  font-family: "Open Sauce Two", sans-serif;
+  color:#2C2C2C;
+  background-color: #FFEFE6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box-absolute-left-10 {
+  color: rgb(124, 28, 28);
+  background-color: rgba(240, 248, 255, 0);
+  box-sizing: border-box;
+  width: 70px;
+  height: auto;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20%;
+}
+
+.box-absolute-left-10 a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #2C2C2C;
+  position: fixed;
+  display: block;
+  align-items: center;
+}
+
+.box-absolute-left-10 a:hover {
+  color: #eb502e;
+}
+
+.box-absolute-left-40 {
+  color: #2C2C2C;
+  background-color: rgba(240, 248, 255, 0);
+  box-sizing: border-box;
+  width: 500px;
+  height: 25%;
+  text-decoration: none;
+
+  line-height: 175%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: 250px;
+  margin-left: 40%;
+}
+
+.box-absolute-left-40 h1 {
+  line-height: 100%;
+}
+
+#flex-vertical-centered {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+}
+
+.button-62 {
+  background: #eb502e;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.rounded{
+    width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.pointed{
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.emphasized { 
+  font-weight: bold;
+  color: #eb502e;
+}
+
+/*
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+*/
