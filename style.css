@@ -1,11 +1,81 @@
 body {
   font-family: "Open Sauce Two", sans-serif;
-  color:#2C2C2C;
-  background-color: #FFEFE6;
+  color:#000080;
+	background: linear-gradient(-45deg, #FFE9C4, #FFDFAB, #CEDBE0, #ABD7FF);
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  background-size: 400% 400%;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  float: left;
+  border-style: solid;
+  border-radius: 10%;
+  border-color: #000080;
+  text-align: center;
+  top: 0%;
+  padding: 5%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  font-size: 0px;
+  float: left;
+}
+
+.row {
+  font-size: 0px;
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+
+img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 95%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(210, 231, 243, 0.9);
+  font-size: 0px;
+  border-style: solid;
+  border-radius: 3%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.content {
+  color: #000080;
+  position: absolute;
+  line-height: 12pt;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .box-absolute-left-10 {
@@ -25,25 +95,32 @@ body {
   margin-left: 20%;
 }
 
+#visit {
+  color: #7194C9;
+  text-underline-offset: 0.15em;
+  text-decoration: underline 0.10em rgba(113, 148, 201, 1);
+}
+
 .box-absolute-left-10 a {
-  text-decoration: none;
+  text-underline-offset: 0.15em;
+  text-decoration: underline 0.10em rgba(113, 148, 201, 0);
   font-size: 15px;
-  color: #2C2C2C;
+  color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  display: block;
+  display: inline-block;
   align-items: center;
 }
 
 .box-absolute-left-10 a:hover {
-  color: #eb502e;
+  color: #7194C9;
 }
 
 .box-absolute-left-40 {
-  color: #2C2C2C;
+  color: #000080;
   background-color: rgba(240, 248, 255, 0);
   box-sizing: border-box;
   width: 500px;
-  height: 25%;
+  height: auto;
   text-decoration: none;
 
   line-height: 175%;
@@ -53,9 +130,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  margin-bottom: auto;
   margin-top: auto;
-  margin-bottom: 250px;
   margin-left: 40%;
+  display: flex;
 }
 
 .box-absolute-left-40 h1 {
@@ -70,7 +148,6 @@ body {
 }
 
 .button-62 {
-  background: #eb502e;
   border: 0;
   border-radius: 12px;
   color: #FFFFFF;
@@ -115,12 +192,17 @@ body {
 
 .emphasized { 
   font-weight: bold;
-  color: #eb502e;
+  color: #000080;
 }
 
-/*
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-*/
