@@ -1,7 +1,7 @@
 body {
   font-family: "Open Sauce Two", sans-serif;
   color:#000080;
-	background: linear-gradient(-45deg, #FFE9C4, #FFDFAB, #CEDBE0, #ABD7FF);
+  background: linear-gradient(-45deg, #FFE9C4, #FFDFAB, #CEDBE0, #ABD7FF);
   animation: gradient 15s ease infinite;
   height: 100vh;
   background-size: 400% 400%;
